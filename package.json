@@ -1,0 +1,24 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npx jest --testTimeout 30000",
+    "test:pact": "npx jest --testTimeout 30000 --testMatch \"**/*.pact.test.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.11.1",
+    "@pact-foundation/pact-node": "^10.10.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.5.4"
+  },
+  "license": "ISC"
+}
